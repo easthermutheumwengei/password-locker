@@ -8,3 +8,6 @@ class Credentials:
     '''
     accounts_list = []
     user_accounts = []
+
+
+def __init__(self, account_name, email, username, password, user):
