@@ -53,3 +53,15 @@ def save_user(user):
     """Save user.
     """
     user.save_user()
+
+
+def user_login(uname, pw):
+    """Function to handle user login.
+    """
+    return User.user_login(uname, pw)
+
+
+def delete_user(user):
+    """Function to remove user.
+    """
+    user.delete_user()
