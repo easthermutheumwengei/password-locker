@@ -15,3 +15,9 @@ def save_account(account):
     """Function to save a credential.
     """
     account.save_account()
+
+
+def generate_pw(length):
+    """Function to generate a new random password.
+    """
+    return Credentials.generate_pw(length)
