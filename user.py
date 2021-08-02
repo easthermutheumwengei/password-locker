@@ -77,3 +77,25 @@ def set_pw(cls, pw):
         """delete_account method that removes a saved credential from the credentials list.
         """
         Credentials.accounts_list.remove(self)
+
+
+class User:
+    '''
+    Class to manage user accounts.
+    '''
+
+    users_list = []
+
+    def __init__(self, fname, lname, username, password):
+        """__init__ method to generate credentials objects.
+
+        Args:
+            fname (string): New user first name.
+            lname (string): New user last name.
+            username (string): New user username.
+            password (string): New user password.
+        """
+        self.fname = fname
+        self.lname = lname
+        self.username = username
+        self.password = password
