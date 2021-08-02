@@ -9,3 +9,9 @@ def create_account(name, emil, uname, pw, user):
     """
     new_credential = Credentials(name, email, uname, pw, user)
     return new_credential
+
+
+def save_account(account):
+    """Function to save a credential.
+    """
+    account.save_account()
