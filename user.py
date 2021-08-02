@@ -30,3 +30,17 @@ def __init__(self, account_name, email, username, password, user):
         """save_account method saves credential objects into accounts_list
     """
     Credentials.accounts_list.append(self)
+
+
+@classmethod
+def generate_pw(cls, pw_length):
+    """generate_pw method that generates a random password.
+
+    Args:
+        pw_length (number): Length of generated password.
+
+    Returns:
+        string: Return the generated password.
+    """
+    pw = ''.join(random.choice(string.ascii_letters) for i in range(pw_length))
+    return pw
