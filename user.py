@@ -25,3 +25,8 @@ def __init__(self, account_name, email, username, password, user):
     self.username = username
     self.password = password
     self.user = user
+
+    def save_account(self):
+        """save_account method saves credential objects into accounts_list
+    """
+    Credentials.accounts_list.append(self)
