@@ -40,3 +40,10 @@ def delete_account(account):
     """Function to delete a credential.
     """
     account.delete_account()
+
+
+def create_user(fname, lname, uname, pw):
+    """Function for creating new user.
+    """
+    new_user = User(fname, lname, uname, pw)
+    return new_user
