@@ -36,3 +36,12 @@ Args:
         self.assertEqual(self.account1.username, '_dylandaxy')
         self.assertEqual(self.account1.password, 'p@$$w0rD')
         self.assertEqual(self.account1.user, 'dylan')
+
+        def test_save_account(self):
+            """test_save_account test case to test if the credential object is saved into the credentials list
+        """
+        self.account1.save_account()
+        self.account2.save_account()
+
+        self.assertEqual(len(Credentials.accounts_list), 2)
+        self.assertEqual(Credentials.accounts_list[0].account_name, 'Twitter')
