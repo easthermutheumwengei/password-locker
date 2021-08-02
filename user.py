@@ -11,3 +11,17 @@ class Credentials:
 
 
 def __init__(self, account_name, email, username, password, user):
+    """__init__ method to help use define the properties of our credentials objects.
+
+        Args:
+            account_name (string): New name of the credential account.
+            email (string): New email address associated with that credential.
+            username (string): New username for that credential.
+            password (string): New password.
+            user ([string]): Current logged in user.
+        """
+    self.account_name = account_name
+    self.email = email
+    self.username = username
+    self.password = password
+    self.user = user
