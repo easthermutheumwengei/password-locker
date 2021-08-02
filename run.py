@@ -34,3 +34,9 @@ def display_accounts(user):
     """
     accounts = Credentials.display_accounts(user)
     return accounts
+
+
+def delete_account(account):
+    """Function to delete a credential.
+    """
+    account.delete_account()
