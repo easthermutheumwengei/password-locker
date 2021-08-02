@@ -21,3 +21,9 @@ def generate_pw(length):
     """Function to generate a new random password.
     """
     return Credentials.generate_pw(length)
+
+
+def set_pw(pw):
+    """Function to set credential password.
+    """
+    return Credentials.set_pw(pw)
