@@ -125,3 +125,15 @@ def save_user(self):
         """delete_user that removes a user from the list of users.
         """
         User.users_list.remove(self)
+
+
+user1 = User('easther', 'mutheu', 'test', 't3st')
+User.users_list.append(user1)
+
+account1 = Credentials(
+    'Twitter', 'esthermutheu99@gmail.com', 'haddasah', 'fsdJHJkjJ', '')
+account2 = Credentials(
+    'Facebook', 'esthermutheu99@gmail.com', 'haddasah', 'JjklTRfseP', '')
+
+Credentials.accounts_list.append(account1)
+Credentials.accounts_list.append(account2)
