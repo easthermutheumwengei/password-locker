@@ -72,3 +72,8 @@ def set_pw(cls, pw):
             if account.user == user:
                 cls.user_accounts.append(account)
         return cls.user_accounts
+
+    def delete_account(self):
+        """delete_account method that removes a saved credential from the credentials list.
+        """
+        Credentials.accounts_list.remove(self)
