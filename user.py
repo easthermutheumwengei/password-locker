@@ -57,3 +57,18 @@ def set_pw(cls, pw):
         string: Password.
     """
     return pw
+
+    @classmethod
+    def display_accounts(cls, user):
+        """display_accounts that loops through the accounts list and filters only those that belong to the currently logged in user.
+
+        Args:
+            user (User): Current user.
+
+        Returns:
+            Credentials: List of filtered credentials.
+        """
+        for account in cls.accounts_list:
+            if account.user == user:
+                cls.user_accounts.append(account)
+        return cls.user_accounts
