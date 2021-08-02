@@ -44,3 +44,16 @@ def generate_pw(cls, pw_length):
     """
     pw = ''.join(random.choice(string.ascii_letters) for i in range(pw_length))
     return pw
+
+
+@classmethod
+def set_pw(cls, pw):
+    """set_pw method that sets a given password.
+
+    Args:
+        pw (string): User password to be set.
+
+    Returns:
+        string: Password.
+    """
+    return pw
