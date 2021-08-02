@@ -47,3 +47,9 @@ def create_user(fname, lname, uname, pw):
     """
     new_user = User(fname, lname, uname, pw)
     return new_user
+
+
+def save_user(user):
+    """Save user.
+    """
+    user.save_user()
