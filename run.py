@@ -27,3 +27,10 @@ def set_pw(pw):
     """Function to set credential password.
     """
     return Credentials.set_pw(pw)
+
+
+def display_accounts(user):
+    """Function that returns all credentials of logged in user.
+    """
+    accounts = Credentials.display_accounts(user)
+    return accounts
