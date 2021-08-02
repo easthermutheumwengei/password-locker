@@ -45,3 +45,16 @@ Args:
 
         self.assertEqual(len(Credentials.accounts_list), 2)
         self.assertEqual(Credentials.accounts_list[0].account_name, 'Twitter')
+
+        def test_generate_pw(self):
+            """test_generate_pw test case to test whether we can generate a random password given a desired length.
+        """
+        self.assertEqual(len(Credentials.generate_pw(5)), 5)
+
+
+def test_set_pw(self):
+    """test_set_pw test case to test whether we can set a password for an object (both credentials and users) when creating one.
+    """
+    pw = Credentials.set_pw('P@$$word123')
+
+    self.assertEqual(pw, 'P@$$word123')
