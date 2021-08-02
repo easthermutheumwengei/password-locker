@@ -105,3 +105,23 @@ def save_user(self):
     """save_user method that saves user objects into the users list.
     """
     User.users_list.append(self)
+
+    @classmethod
+    def user_login(cls, username, pw):
+        """user_login that handles users logging in.
+
+        Args:
+            username (string): Username to log in.
+            pw (string): User password.
+
+        Returns:
+            User: Returns a user object that matches the given username and password.
+        """
+        for user in cls.users_list:
+            if user.username == username and user.password == pw:
+                return user
+
+    def delete_user(self):
+        """delete_user that removes a user from the list of users.
+        """
+        User.users_list.remove(self)
